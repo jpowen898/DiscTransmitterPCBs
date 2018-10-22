@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name Transmitter-board-rescue)(type Legacy)(uri "${KIPRJMOD}/Transmitter board-rescue.lib")(options "")(descr ""))
+  (lib (name "New Components")(type Legacy)(uri "C:/Users/Parker's PC/Box/Programming FIles/DiscTransmitter/Transmitter board/New Components.lib")(options "")(descr ""))
+)
