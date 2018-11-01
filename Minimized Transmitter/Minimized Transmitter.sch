@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Minimized Transmitter-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -14,14 +15,266 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_NXP_LPC:LPC824M201JHI33 U?
+L MCU_NXP_LPC:LPC824M201JHI33 U1
 U 1 1 5BC26182
 P 2500 2300
-F 0 "U?" H 2500 3478 50  0000 C CNN
+F 0 "U1" H 2500 3478 50  0000 C CNN
 F 1 "LPC824M201JHI33" H 2500 3387 50  0000 C CNN
 F 2 "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.45x3.45mm" H 3500 3300 50  0001 C CNN
 F 3 "http://www.nxp.com/documents/data_sheet/LPC82X.pdf" H 2650 2950 50  0001 L CNN
 	1    2500 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_ARM_JTAG_SWD_10 J1
+U 1 1 5BDB2F11
+P 2000 4550
+F 0 "J1" H 1560 4596 50  0000 R CNN
+F 1 "Conn_ARM_JTAG_SWD_10" H 1560 4505 50  0000 R CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD" H 2050 4000 50  0001 L TNN
+F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.faqs/attached/13634/cortex_debug_connectors.pdf" V 1650 3300 50  0001 C CNN
+	1    2000 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L RF_AM_FM:RFM69HCW U2
+U 1 1 5BDB3040
+P 5550 4450
+F 0 "U2" H 5550 5150 50  0000 C CNN
+F 1 "RFM69HCW" H 5550 5050 50  0000 C CNN
+F 2 "my_foot_prints:RFM96HCW" H 2250 6100 50  0001 C CNN
+F 3 "http://www.hoperf.com/upload/rf/RFM69HCW-V1.1.pdf" H 2250 6100 50  0001 C CNN
+	1    5550 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5BDB30E9
+P 5200 1650
+F 0 "D1" H 5192 1395 50  0000 C CNN
+F 1 "LED" H 5192 1486 50  0000 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric" H 5200 1650 50  0001 C CNN
+F 3 "~" H 5200 1650 50  0001 C CNN
+	1    5200 1650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R1
+U 1 1 5BDB3382
+P 4950 1650
+F 0 "R1" V 4754 1650 50  0000 C CNN
+F 1 "R_Small" V 4845 1650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 4950 1650 50  0001 C CNN
+F 3 "~" H 4950 1650 50  0001 C CNN
+	1    4950 1650
+	0    1    1    0   
+$EndComp
+Text GLabel 5050 4250 0    50   Input ~ 0
+MOSI
+Text GLabel 5050 4350 0    50   Input ~ 0
+MISO
+Text GLabel 5050 4450 0    50   Input ~ 0
+NSS
+Text GLabel 5050 4150 0    50   Input ~ 0
+SCK
+Text GLabel 3200 2800 2    50   Input ~ 0
+DIO0
+$Comp
+L power:GND #PWR0101
+U 1 1 5BDB3517
+P 5550 5150
+F 0 "#PWR0101" H 5550 4900 50  0001 C CNN
+F 1 "GND" H 5555 4977 50  0000 C CNN
+F 2 "" H 5550 5150 50  0001 C CNN
+F 3 "" H 5550 5150 50  0001 C CNN
+	1    5550 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 5050 5550 5150
+Connection ~ 5550 5150
+Wire Wire Line
+	5650 5050 5650 5150
+Wire Wire Line
+	5650 5150 5550 5150
+$Comp
+L power:+3V3 #PWR0102
+U 1 1 5BDB3592
+P 5550 3950
+F 0 "#PWR0102" H 5550 3800 50  0001 C CNN
+F 1 "+3V3" V 5565 4123 50  0000 C CNN
+F 2 "" H 5550 3950 50  0001 C CNN
+F 3 "" H 5550 3950 50  0001 C CNN
+	1    5550 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5BDB373E
+P 2400 3300
+F 0 "#PWR0103" H 2400 3050 50  0001 C CNN
+F 1 "GND" V 2405 3172 50  0000 R CNN
+F 2 "" H 2400 3300 50  0001 C CNN
+F 3 "" H 2400 3300 50  0001 C CNN
+	1    2400 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3V3 #PWR0104
+U 1 1 5BDB378B
+P 2400 1300
+F 0 "#PWR0104" H 2400 1150 50  0001 C CNN
+F 1 "+3V3" V 2415 1428 50  0000 L CNN
+F 2 "" H 2400 1300 50  0001 C CNN
+F 3 "" H 2400 1300 50  0001 C CNN
+	1    2400 1300
+	0    -1   -1   0   
+$EndComp
+Text GLabel 3200 2700 2    50   Input ~ 0
+MOSI
+Text GLabel 3200 2600 2    50   Input ~ 0
+MISO
+Text GLabel 3200 1600 2    50   Input ~ 0
+NSS
+Text GLabel 3200 2500 2    50   Input ~ 0
+SCK
+Text GLabel 6050 4850 2    50   Input ~ 0
+DIO0
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 5BDB3AA6
+P 6500 1800
+F 0 "BT1" H 6618 1896 50  0000 L CNN
+F 1 "Battery_Cell" H 6618 1805 50  0000 L CNN
+F 2 "my_foot_prints:PRT-11892" V 6500 1860 50  0001 C CNN
+F 3 "~" V 6500 1860 50  0001 C CNN
+	1    6500 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 5BDB3BBB
+P 6500 1900
+F 0 "#PWR0105" H 6500 1650 50  0001 C CNN
+F 1 "GND" H 6505 1727 50  0000 C CNN
+F 2 "" H 6500 1900 50  0001 C CNN
+F 3 "" H 6500 1900 50  0001 C CNN
+	1    6500 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0106
+U 1 1 5BDB3C26
+P 6500 1500
+F 0 "#PWR0106" H 6500 1350 50  0001 C CNN
+F 1 "+3V3" V 6515 1628 50  0000 L CNN
+F 2 "" H 6500 1500 50  0001 C CNN
+F 3 "" H 6500 1500 50  0001 C CNN
+	1    6500 1500
+	0    -1   -1   0   
+$EndComp
+Text GLabel 2500 4550 2    50   Input ~ 0
+SWDIO
+Text GLabel 2500 4450 2    50   Input ~ 0
+SWDCLK
+Text GLabel 2500 4250 2    50   Input ~ 0
+nRESET
+NoConn ~ 2500 4650
+NoConn ~ 2500 4750
+$Comp
+L power:GND #PWR0107
+U 1 1 5BDB3CFB
+P 1950 5250
+F 0 "#PWR0107" H 1950 5000 50  0001 C CNN
+F 1 "GND" H 1955 5077 50  0000 C CNN
+F 2 "" H 1950 5250 50  0001 C CNN
+F 3 "" H 1950 5250 50  0001 C CNN
+	1    1950 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 5250 2000 5250
+Wire Wire Line
+	2000 5250 2000 5150
+Wire Wire Line
+	1950 5250 1900 5250
+Wire Wire Line
+	1900 5250 1900 5150
+Connection ~ 1950 5250
+$Comp
+L power:+3V3 #PWR0108
+U 1 1 5BDB3DD2
+P 2000 3950
+F 0 "#PWR0108" H 2000 3800 50  0001 C CNN
+F 1 "+3V3" H 2015 4123 50  0000 C CNN
+F 2 "" H 2000 3950 50  0001 C CNN
+F 3 "" H 2000 3950 50  0001 C CNN
+	1    2000 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 5BDB3E27
+P 5350 1650
+F 0 "#PWR0109" H 5350 1400 50  0001 C CNN
+F 1 "GND" H 5355 1477 50  0000 C CNN
+F 2 "" H 5350 1650 50  0001 C CNN
+F 3 "" H 5350 1650 50  0001 C CNN
+	1    5350 1650
+	1    0    0    -1  
+$EndComp
+Text GLabel 3200 1700 2    50   Input ~ 0
+LED
+Text GLabel 1800 1800 0    50   Input ~ 0
+SWDIO
+Text GLabel 1800 1900 0    50   Input ~ 0
+SWDCLK
+Text GLabel 1800 2100 0    50   Input ~ 0
+nRESET
+Text GLabel 4850 1650 0    50   Input ~ 0
+LED
+$Comp
+L Connector:Conn_01x03_Male J3
+U 1 1 5BDB404B
+P 6700 1500
+F 0 "J3" H 6673 1430 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 6673 1521 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6700 1500 50  0001 C CNN
+F 3 "~" H 6700 1500 50  0001 C CNN
+	1    6700 1500
+	-1   0    0    1   
+$EndComp
+NoConn ~ 6500 1400
+NoConn ~ 6050 4750
+NoConn ~ 6050 4650
+NoConn ~ 6050 4550
+NoConn ~ 6050 4450
+NoConn ~ 6050 4350
+NoConn ~ 5050 4650
+Text GLabel 4900 2450 0    50   Input ~ 0
+TX
+Text GLabel 1800 2600 0    50   Input ~ 0
+TX
+$Comp
+L Connector:Conn_01x02_Male J2
+U 1 1 5BDB473F
+P 5100 2550
+F 0 "J2" H 5073 2430 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 5073 2521 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5100 2550 50  0001 C CNN
+F 3 "~" H 5100 2550 50  0001 C CNN
+	1    5100 2550
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0110
+U 1 1 5BDB48B8
+P 4900 2550
+F 0 "#PWR0110" H 4900 2300 50  0001 C CNN
+F 1 "GND" H 4905 2377 50  0000 C CNN
+F 2 "" H 4900 2550 50  0001 C CNN
+F 3 "" H 4900 2550 50  0001 C CNN
+	1    4900 2550
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
