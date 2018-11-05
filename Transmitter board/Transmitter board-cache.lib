@@ -1,11 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Connector:Conn_01x02_Male
+# Connector_Conn_01x02_Male
 #
-DEF Connector:Conn_01x02_Male J 0 40 Y N 1 F N
+DEF Connector_Conn_01x02_Male J 0 40 Y N 1 F N
 F0 "J" 0 100 50 H V C CNN
-F1 "Connector:Conn_01x02_Male" 0 -200 50 H V C CNN
+F1 "Connector_Conn_01x02_Male" 0 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -21,11 +21,11 @@ X Pin_2 2 200 -100 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector:Conn_01x03_Male
+# Connector_Conn_01x03_Male
 #
-DEF Connector:Conn_01x03_Male J 0 40 Y N 1 F N
+DEF Connector_Conn_01x03_Male J 0 40 Y N 1 F N
 F0 "J" 0 200 50 H V C CNN
-F1 "Connector:Conn_01x03_Male" 0 -200 50 H V C CNN
+F1 "Connector_Conn_01x03_Male" 0 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -44,11 +44,11 @@ X Pin_3 3 200 -100 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector:Conn_01x04_Male
+# Connector_Conn_01x04_Male
 #
-DEF Connector:Conn_01x04_Male J 0 40 Y N 1 F N
+DEF Connector_Conn_01x04_Male J 0 40 Y N 1 F N
 F0 "J" 0 200 50 H V C CNN
-F1 "Connector:Conn_01x04_Male" 0 -300 50 H V C CNN
+F1 "Connector_Conn_01x04_Male" 0 -300 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -70,11 +70,11 @@ X Pin_4 4 200 -200 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector:Conn_01x05_Male
+# Connector_Conn_01x05_Male
 #
-DEF Connector:Conn_01x05_Male J 0 40 Y N 1 F N
+DEF Connector_Conn_01x05_Male J 0 40 Y N 1 F N
 F0 "J" 0 300 50 H V C CNN
-F1 "Connector:Conn_01x05_Male" 0 -300 50 H V C CNN
+F1 "Connector_Conn_01x05_Male" 0 -300 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -99,11 +99,11 @@ X Pin_5 5 200 -200 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:Battery_Cell
+# Device_Battery_Cell
 #
-DEF Device:Battery_Cell BT 0 0 N N 1 F N
+DEF Device_Battery_Cell BT 0 0 N N 1 F N
 F0 "BT" 100 100 50 H V L CNN
-F1 "Device:Battery_Cell" 100 0 50 H V L CNN
+F1 "Device_Battery_Cell" 100 0 50 H V L CNN
 F2 "" 0 60 50 V I C CNN
 F3 "" 0 60 50 V I C CNN
 DRAW
@@ -118,11 +118,11 @@ X - 2 0 -100 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:C_Small
+# Device_C_Small
 #
-DEF Device:C_Small C 0 10 N N 1 F N
+DEF Device_C_Small C 0 10 N N 1 F N
 F0 "C" 10 70 50 H V L CNN
-F1 "Device:C_Small" 10 -80 50 H V L CNN
+F1 "Device_C_Small" 10 -80 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -136,11 +136,11 @@ X ~ 2 0 -100 80 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:R_Small
+# Device_R_Small
 #
-DEF Device:R_Small R 0 10 N N 1 F N
+DEF Device_R_Small R 0 10 N N 1 F N
 F0 "R" 30 20 50 H V L CNN
-F1 "Device:R_Small" 30 -40 50 H V L CNN
+F1 "Device_R_Small" 30 -40 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -153,28 +153,11 @@ X ~ 2 0 -100 30 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# New Components:XC6227C331PR-G
+# Transmitter-board-rescue_LED
 #
-DEF New Components:XC6227C331PR-G U 0 40 Y Y 1 F N
-F0 "U" 0 250 50 H V C CNN
-F1 "New Components:XC6227C331PR-G" 0 150 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-S 300 -250 -300 100 0 1 0 f
-X CE 1 -500 0 200 R 50 50 1 1 I
-X GND 2 0 -450 200 U 50 50 1 1 I
-X NC 3 500 -100 200 L 50 50 1 1 I
-X VIN 4 -500 -100 200 R 50 50 1 1 I
-X VROUT 5 500 0 200 L 50 50 1 1 I
-ENDDRAW
-ENDDEF
-#
-# Transmitter-board-rescue:LED
-#
-DEF Transmitter-board-rescue:LED D 0 40 Y N 1 F N
+DEF Transmitter-board-rescue_LED D 0 40 Y N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "Transmitter-board-rescue:LED" 0 -100 50 H V C CNN
+F1 "Transmitter-board-rescue_LED" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -191,11 +174,11 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Transmitter-board-rescue:LPC824_HVQFN33
+# Transmitter-board-rescue_LPC824_HVQFN33
 #
-DEF Transmitter-board-rescue:LPC824_HVQFN33 U 0 40 Y Y 1 F N
+DEF Transmitter-board-rescue_LPC824_HVQFN33 U 0 40 Y Y 1 F N
 F0 "U" -400 150 60 H V C CNN
-F1 "Transmitter-board-rescue:LPC824_HVQFN33" -450 -100 60 H V C CNN
+F1 "Transmitter-board-rescue_LPC824_HVQFN33" -450 -100 60 H V C CNN
 F2 "" 0 0 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 DRAW
@@ -236,11 +219,11 @@ X PIO0_10/I2C0_SCL 9 -950 -1200 200 U 50 50 1 1 O
 ENDDRAW
 ENDDEF
 #
-# Transmitter-board-rescue:RFM69HCW
+# Transmitter-board-rescue_RFM69HCW
 #
-DEF Transmitter-board-rescue:RFM69HCW U 0 40 Y Y 1 F N
+DEF Transmitter-board-rescue_RFM69HCW U 0 40 Y Y 1 F N
 F0 "U" 0 300 60 H V C CNN
-F1 "Transmitter-board-rescue:RFM69HCW" 0 -50 60 V V C CNN
+F1 "Transmitter-board-rescue_RFM69HCW" 0 -50 60 V V C CNN
 F2 "" 0 50 60 H I C CNN
 F3 "" 0 50 60 H I C CNN
 DRAW
@@ -262,11 +245,11 @@ X RESET 9 -550 -200 200 R 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
-# Transmitter-board-rescue:SWD_10-pin-1.27_Conn_2x5
+# Transmitter-board-rescue_SWD_10-pin-1.27_Conn_2x5
 #
-DEF Transmitter-board-rescue:SWD_10-pin-1.27_Conn_2x5 U 0 40 Y Y 1 F N
+DEF Transmitter-board-rescue_SWD_10-pin-1.27_Conn_2x5 U 0 40 Y Y 1 F N
 F0 "U" 0 400 50 H V C CNN
-F1 "Transmitter-board-rescue:SWD_10-pin-1.27_Conn_2x5" 0 300 50 H V C CNN
+F1 "Transmitter-board-rescue_SWD_10-pin-1.27_Conn_2x5" 0 300 50 H V C CNN
 F2 "" 0 650 50 H I C CNN
 F3 "" 0 650 50 H I C CNN
 DRAW
@@ -284,11 +267,11 @@ X GNDDetect 9 -450 -250 200 R 50 24 1 1 I
 ENDDRAW
 ENDDEF
 #
-# Transmitter-board-rescue:SW_Push
+# Transmitter-board-rescue_SW_Push
 #
-DEF Transmitter-board-rescue:SW_Push SW 0 40 N N 1 F N
+DEF Transmitter-board-rescue_SW_Push SW 0 40 N N 1 F N
 F0 "SW" 50 100 50 H V L CNN
-F1 "Transmitter-board-rescue:SW_Push" 0 -60 50 H V C CNN
+F1 "Transmitter-board-rescue_SW_Push" 0 -60 50 H V C CNN
 F2 "" 0 200 50 H I C CNN
 F3 "" 0 200 50 H I C CNN
 DRAW
@@ -301,11 +284,11 @@ X 2 2 200 0 100 L 50 50 0 1 P
 ENDDRAW
 ENDDEF
 #
-# power:+3.3V
+# power_+3.3V
 #
-DEF power:+3.3V #PWR 0 0 Y Y 1 F P
+DEF power_+3.3V #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power:+3.3V" 0 140 50 H V C CNN
+F1 "power_+3.3V" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 ALIAS +3.3V
@@ -317,11 +300,11 @@ X +3V3 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# power:+3V3
+# power_+3V3
 #
-DEF power:+3V3 #PWR 0 0 Y Y 1 F P
+DEF power_+3V3 #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power:+3V3" 0 140 50 H V C CNN
+F1 "power_+3V3" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -332,11 +315,11 @@ X +3V3 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# power:GND
+# power_GND
 #
-DEF power:GND #PWR 0 0 Y Y 1 F P
+DEF power_GND #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "power:GND" 0 -150 50 H V C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
