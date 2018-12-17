@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 42)
+    (drawings 43)
     (tracks 371)
     (zones 0)
     (modules 25)
@@ -1314,6 +1314,9 @@
       (net 52 "Net-(U1-Pad1)"))
   )
 
+  (gr_text "Version 2" (at 82.25 80.55 180) (layer B.SilkS)
+    (effects (font (size 1 1) (thickness 0.25)) (justify mirror))
+  )
   (gr_arc (start 94 47) (end 95 47) (angle -90) (layer Edge.Cuts) (width 0.15))
   (gr_arc (start 69.6 47) (end 69.6 46) (angle -90) (layer Edge.Cuts) (width 0.15))
   (gr_arc (start 69.6 82) (end 68.6 82) (angle -90) (layer Edge.Cuts) (width 0.15))
