@@ -29,4 +29,5 @@
   (lib (name 8-bit_shift_reg)(type Legacy)(uri ${KIPRJMOD}/8-bit_shift_reg.lib)(options "")(descr ""))
   (lib (name 3-digitsevensegment)(type Legacy)(uri ${KIPRJMOD}/3-digitsevensegment.lib)(options "")(descr ""))
   (lib (name 32bitshifter,HV9308)(type Legacy)(uri ${KIPRJMOD}/32bitshifter,HV9308.lib)(options "")(descr ""))
+  (lib (name DiscTransmitter-rescue)(type Legacy)(uri ${KIPRJMOD}/DiscTransmitter-rescue.lib)(options "")(descr ""))
 )

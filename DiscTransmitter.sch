@@ -447,7 +447,7 @@ U 1 1 5B140E2D
 P 7350 3400
 F 0 "U2" H 7350 3200 60  0000 C CNN
 F 1 "4-DigitSevenSegment" H 7800 3950 39  0000 C CNN
-F 2 "my_foot_prints:FourDigitSevenSegmentDisplay" H 7350 3200 60  0001 C CNN
+F 2 "my_foot_prints:TwoDigDisplayX2" H 7350 3200 60  0001 C CNN
 F 3 "" H 7350 3200 60  0001 C CNN
 	1    7350 3400
 	1    0    0    -1  
@@ -982,7 +982,7 @@ Wire Wire Line
 	3350 7200 3500 7200
 Connection ~ 4700 6500
 $Comp
-L conn:Conn_01x04_Male J3
+L DiscTransmitter-rescue:Conn_01x04_Male-conn J3
 U 1 1 5B3577AF
 P 4300 7600
 F 0 "J3" H 4300 7800 50  0000 C CNN
@@ -993,7 +993,7 @@ F 3 "" H 4300 7600 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L conn:Conn_01x01_Male J4
+L DiscTransmitter-rescue:Conn_01x01_Male-conn J4
 U 1 1 5B35782A
 P 5000 7400
 F 0 "J4" H 5000 7500 50  0000 C CNN
@@ -1004,7 +1004,7 @@ F 3 "" H 5000 7400 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L conn:Conn_01x01_Male J2
+L DiscTransmitter-rescue:Conn_01x01_Male-conn J2
 U 1 1 5B3578C4
 P 3900 7650
 F 0 "J2" H 3900 7750 50  0000 C CNN
@@ -1015,7 +1015,7 @@ F 3 "" H 3900 7650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L conn:Conn_01x01_Male J1
+L DiscTransmitter-rescue:Conn_01x01_Male-conn J1
 U 1 1 5B357982
 P 3750 7500
 F 0 "J1" H 3750 7600 50  0000 C CNN

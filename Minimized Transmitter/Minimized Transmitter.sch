@@ -37,17 +37,6 @@ F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.faqs/attached/13634/cortex
 	1    0    0    -1  
 $EndComp
 $Comp
-L RF_AM_FM:RFM69HCW U2
-U 1 1 5BDB3040
-P 5550 4450
-F 0 "U2" H 5550 5150 50  0000 C CNN
-F 1 "RFM69HCW" H 5550 5050 50  0000 C CNN
-F 2 "my_foot_prints:RFM96HCW" H 2250 6100 50  0001 C CNN
-F 3 "http://www.hoperf.com/upload/rf/RFM69HCW-V1.1.pdf" H 2250 6100 50  0001 C CNN
-	1    5550 4450
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:LED D1
 U 1 1 5BDB30E9
 P 5200 1650
@@ -69,43 +58,36 @@ F 3 "~" H 4950 1650 50  0001 C CNN
 	1    4950 1650
 	0    1    1    0   
 $EndComp
-Text GLabel 5050 4250 0    50   Input ~ 0
+Text GLabel 7450 4400 2    50   Input ~ 0
 MOSI
-Text GLabel 5050 4350 0    50   Input ~ 0
+Text GLabel 6350 4200 0    50   Input ~ 0
 MISO
-Text GLabel 5050 4450 0    50   Input ~ 0
+Text GLabel 7450 4200 2    50   Input ~ 0
 NSS
-Text GLabel 5050 4150 0    50   Input ~ 0
+Text GLabel 7450 4300 2    50   Input ~ 0
 SCK
 Text GLabel 3200 2800 2    50   Input ~ 0
 DIO0
 $Comp
 L power:GND #PWR0101
 U 1 1 5BDB3517
-P 5550 5150
-F 0 "#PWR0101" H 5550 4900 50  0001 C CNN
-F 1 "GND" H 5555 4977 50  0000 C CNN
-F 2 "" H 5550 5150 50  0001 C CNN
-F 3 "" H 5550 5150 50  0001 C CNN
-	1    5550 5150
-	1    0    0    -1  
+P 7450 4600
+F 0 "#PWR0101" H 7450 4350 50  0001 C CNN
+F 1 "GND" H 7455 4427 50  0000 C CNN
+F 2 "" H 7450 4600 50  0001 C CNN
+F 3 "" H 7450 4600 50  0001 C CNN
+	1    7450 4600
+	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	5550 5050 5550 5150
-Connection ~ 5550 5150
-Wire Wire Line
-	5650 5050 5650 5150
-Wire Wire Line
-	5650 5150 5550 5150
 $Comp
 L power:+3V3 #PWR0102
 U 1 1 5BDB3592
-P 5550 3950
-F 0 "#PWR0102" H 5550 3800 50  0001 C CNN
-F 1 "+3V3" V 5565 4123 50  0000 C CNN
-F 2 "" H 5550 3950 50  0001 C CNN
-F 3 "" H 5550 3950 50  0001 C CNN
-	1    5550 3950
+P 7450 4700
+F 0 "#PWR0102" H 7450 4550 50  0001 C CNN
+F 1 "+3V3" V 7465 4873 50  0000 C CNN
+F 2 "" H 7450 4700 50  0001 C CNN
+F 3 "" H 7450 4700 50  0001 C CNN
+	1    7450 4700
 	0    1    1    0   
 $EndComp
 $Comp
@@ -138,7 +120,7 @@ Text GLabel 3200 1600 2    50   Input ~ 0
 NSS
 Text GLabel 3200 2500 2    50   Input ~ 0
 SCK
-Text GLabel 6050 4850 2    50   Input ~ 0
+Text GLabel 6350 4300 0    50   Input ~ 0
 DIO0
 $Comp
 L Device:Battery_Cell BT1
@@ -245,12 +227,12 @@ F 3 "~" H 6700 1500 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 NoConn ~ 6500 1400
-NoConn ~ 6050 4750
-NoConn ~ 6050 4650
-NoConn ~ 6050 4550
-NoConn ~ 6050 4450
-NoConn ~ 6050 4350
-NoConn ~ 5050 4650
+NoConn ~ 7450 4500
+NoConn ~ 6350 4700
+NoConn ~ 6350 4600
+NoConn ~ 6350 4500
+NoConn ~ 6350 4400
+NoConn ~ 7450 4800
 Text GLabel 4900 2450 0    50   Input ~ 0
 TX
 Text GLabel 1800 2600 0    50   Input ~ 0
@@ -276,5 +258,27 @@ F 2 "" H 4900 2550 50  0001 C CNN
 F 3 "" H 4900 2550 50  0001 C CNN
 	1    4900 2550
 	1    0    0    -1  
+$EndComp
+$Comp
+L Transmitter~board-rescue:RFM69HCW U2
+U 1 1 5C15B19A
+P 6900 4500
+F 0 "U2" H 6900 5087 60  0000 C CNN
+F 1 "RFM69HCW" H 6900 4981 60  0000 C CNN
+F 2 "my_foot_prints:RFM96HCW" H 6900 4550 60  0001 C CNN
+F 3 "" H 6900 4550 60  0001 C CNN
+	1    6900 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0111
+U 1 1 5C15B399
+P 6350 4800
+F 0 "#PWR0111" H 6350 4550 50  0001 C CNN
+F 1 "GND" H 6355 4627 50  0000 C CNN
+F 2 "" H 6350 4800 50  0001 C CNN
+F 3 "" H 6350 4800 50  0001 C CNN
+	1    6350 4800
+	0    1    1    0   
 $EndComp
 $EndSCHEMATC
