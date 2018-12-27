@@ -260,7 +260,7 @@ F 3 "" H 4900 2550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transmitter~board-rescue:RFM69HCW U2
+L Minimized-Transmitter-rescue:RFM69HCW-Transmitter~board-rescue U2
 U 1 1 5C15B19A
 P 6900 4500
 F 0 "U2" H 6900 5087 60  0000 C CNN
