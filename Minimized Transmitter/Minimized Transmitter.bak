@@ -26,17 +26,6 @@ F 3 "http://www.nxp.com/documents/data_sheet/LPC82X.pdf" H 2650 2950 50  0001 L 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_ARM_JTAG_SWD_10 J1
-U 1 1 5BDB2F11
-P 2000 4550
-F 0 "J1" H 1560 4596 50  0000 R CNN
-F 1 "Conn_ARM_JTAG_SWD_10" H 1560 4505 50  0000 R CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD" H 2050 4000 50  0001 L TNN
-F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.faqs/attached/13634/cortex_debug_connectors.pdf" V 1650 3300 50  0001 C CNN
-	1    2000 4550
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:LED D1
 U 1 1 5BDB30E9
 P 5200 1650
@@ -126,73 +115,51 @@ $Comp
 L Device:Battery_Cell BT1
 U 1 1 5BDB3AA6
 P 6500 1800
-F 0 "BT1" H 6618 1896 50  0000 L CNN
-F 1 "Battery_Cell" H 6618 1805 50  0000 L CNN
+F 0 "BT1" V 6700 1850 50  0000 L CNN
+F 1 "Battery_Cell" V 6618 1805 50  0000 L CNN
 F 2 "my_foot_prints:PRT-11892" V 6500 1860 50  0001 C CNN
 F 3 "~" V 6500 1860 50  0001 C CNN
 	1    6500 1800
-	1    0    0    -1  
+	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR0105
 U 1 1 5BDB3BBB
-P 6500 1900
-F 0 "#PWR0105" H 6500 1650 50  0001 C CNN
-F 1 "GND" H 6505 1727 50  0000 C CNN
-F 2 "" H 6500 1900 50  0001 C CNN
-F 3 "" H 6500 1900 50  0001 C CNN
-	1    6500 1900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR0106
-U 1 1 5BDB3C26
-P 6500 1500
-F 0 "#PWR0106" H 6500 1350 50  0001 C CNN
-F 1 "+3V3" V 6515 1628 50  0000 L CNN
-F 2 "" H 6500 1500 50  0001 C CNN
-F 3 "" H 6500 1500 50  0001 C CNN
-	1    6500 1500
+P 6600 1800
+F 0 "#PWR0105" H 6600 1550 50  0001 C CNN
+F 1 "GND" H 6605 1627 50  0000 C CNN
+F 2 "" H 6600 1800 50  0001 C CNN
+F 3 "" H 6600 1800 50  0001 C CNN
+	1    6600 1800
 	0    -1   -1   0   
 $EndComp
-Text GLabel 2500 4550 2    50   Input ~ 0
+Text GLabel 3700 4500 2    50   Input ~ 0
 SWDIO
-Text GLabel 2500 4450 2    50   Input ~ 0
+Text GLabel 3700 4600 2    50   Input ~ 0
 SWDCLK
-Text GLabel 2500 4250 2    50   Input ~ 0
+Text GLabel 3700 4700 2    50   Input ~ 0
 nRESET
-NoConn ~ 2500 4650
-NoConn ~ 2500 4750
 $Comp
 L power:GND #PWR0107
 U 1 1 5BDB3CFB
-P 1950 5250
-F 0 "#PWR0107" H 1950 5000 50  0001 C CNN
-F 1 "GND" H 1955 5077 50  0000 C CNN
-F 2 "" H 1950 5250 50  0001 C CNN
-F 3 "" H 1950 5250 50  0001 C CNN
-	1    1950 5250
-	1    0    0    -1  
+P 3700 4400
+F 0 "#PWR0107" H 3700 4150 50  0001 C CNN
+F 1 "GND" V 3700 4200 50  0000 C CNN
+F 2 "" H 3700 4400 50  0001 C CNN
+F 3 "" H 3700 4400 50  0001 C CNN
+	1    3700 4400
+	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	1950 5250 2000 5250
-Wire Wire Line
-	2000 5250 2000 5150
-Wire Wire Line
-	1950 5250 1900 5250
-Wire Wire Line
-	1900 5250 1900 5150
-Connection ~ 1950 5250
 $Comp
 L power:+3V3 #PWR0108
 U 1 1 5BDB3DD2
-P 2000 3950
-F 0 "#PWR0108" H 2000 3800 50  0001 C CNN
-F 1 "+3V3" H 2015 4123 50  0000 C CNN
-F 2 "" H 2000 3950 50  0001 C CNN
-F 3 "" H 2000 3950 50  0001 C CNN
-	1    2000 3950
-	1    0    0    -1  
+P 3700 4300
+F 0 "#PWR0108" H 3700 4150 50  0001 C CNN
+F 1 "+3V3" V 3700 4500 50  0000 C CNN
+F 2 "" H 3700 4300 50  0001 C CNN
+F 3 "" H 3700 4300 50  0001 C CNN
+	1    3700 4300
+	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR0109
@@ -215,18 +182,6 @@ Text GLabel 1800 2100 0    50   Input ~ 0
 nRESET
 Text GLabel 4850 1650 0    50   Input ~ 0
 LED
-$Comp
-L Connector:Conn_01x03_Male J3
-U 1 1 5BDB404B
-P 6700 1500
-F 0 "J3" H 6673 1430 50  0000 R CNN
-F 1 "Conn_01x03_Male" H 6673 1521 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6700 1500 50  0001 C CNN
-F 3 "~" H 6700 1500 50  0001 C CNN
-	1    6700 1500
-	-1   0    0    1   
-$EndComp
-NoConn ~ 6500 1400
 NoConn ~ 7450 4500
 NoConn ~ 6350 4700
 NoConn ~ 6350 4600
@@ -281,4 +236,115 @@ F 3 "" H 6350 4800 50  0001 C CNN
 	1    6350 4800
 	0    1    1    0   
 $EndComp
+$Comp
+L Connector:Conn_01x05_Male J4
+U 1 1 5C23D507
+P 3500 4500
+F 0 "J4" H 3606 4878 50  0000 C CNN
+F 1 "Conn_01x05_Male" H 3606 4787 50  0000 C CNN
+F 2 "my_foot_prints:SWD_5_Pin_Minimized_SurfaceMount" H 3500 4500 50  0001 C CNN
+F 3 "~" H 3500 4500 50  0001 C CNN
+	1    3500 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0106
+U 1 1 5BDB3C26
+P 6200 1800
+F 0 "#PWR0106" H 6200 1650 50  0001 C CNN
+F 1 "+3V3" V 6215 1928 50  0000 L CNN
+F 2 "" H 6200 1800 50  0001 C CNN
+F 3 "" H 6200 1800 50  0001 C CNN
+	1    6200 1800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6200 1800 6300 1800
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5C23E259
+P 7800 2200
+F 0 "SW?" H 7800 2485 50  0000 C CNN
+F 1 "SW_Push" H 7800 2394 50  0000 C CNN
+F 2 "" H 7800 2400 50  0001 C CNN
+F 3 "" H 7800 2400 50  0001 C CNN
+	1    7800 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C23E2AF
+P 7600 2400
+F 0 "#PWR?" H 7600 2150 50  0001 C CNN
+F 1 "GND" V 7605 2272 50  0000 R CNN
+F 2 "" H 7600 2400 50  0001 C CNN
+F 3 "" H 7600 2400 50  0001 C CNN
+	1    7600 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5C23E323
+P 8050 1950
+F 0 "#PWR?" H 8050 1800 50  0001 C CNN
+F 1 "+3V3" H 8065 2123 50  0000 C CNN
+F 2 "" H 8050 1950 50  0001 C CNN
+F 3 "" H 8050 1950 50  0001 C CNN
+	1    8050 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5C23E538
+P 8050 2050
+F 0 "R?" H 8109 2096 50  0000 L CNN
+F 1 "100Kohms" H 8109 2005 50  0000 L CNN
+F 2 "" H 8050 2050 50  0001 C CNN
+F 3 "~" H 8050 2050 50  0001 C CNN
+	1    8050 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 2200 8050 2200
+Wire Wire Line
+	8050 2200 8050 2150
+Text GLabel 8200 2200 2    50   Input ~ 0
+nRESET
+Wire Wire Line
+	8200 2200 8050 2200
+Connection ~ 8050 2200
+Wire Wire Line
+	7600 2400 7600 2200
+$Comp
+L Device:C_Small C?
+U 1 1 5C23EB2A
+P 7850 2400
+F 0 "C?" V 7950 2400 50  0000 C CNN
+F 1 "0.1uF" V 7750 2400 50  0000 C CNN
+F 2 "" H 7850 2400 50  0001 C CNN
+F 3 "~" H 7850 2400 50  0001 C CNN
+	1    7850 2400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7750 2400 7600 2400
+Connection ~ 7600 2400
+Wire Wire Line
+	7950 2400 8050 2400
+Wire Wire Line
+	8050 2400 8050 2200
+Text Notes 7500 1700 0    50   ~ 0
+Reset Button
+Text Notes 4850 2300 0    50   ~ 0
+Serial Out
+Text Notes 4950 1300 0    50   ~ 0
+LED
+Text Notes 6250 1550 0    50   ~ 0
+Battery
+Text Notes 6800 3850 0    50   ~ 0
+Radio
+Text Notes 3450 4050 0    50   ~ 0
+SWD Connections
+Text Notes 7550 2900 0    50   ~ 0
+Programable Button\n
 $EndSCHEMATC
