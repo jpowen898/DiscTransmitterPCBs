@@ -114,24 +114,24 @@ DIO0
 $Comp
 L Device:Battery_Cell BT1
 U 1 1 5BDB3AA6
-P 6500 1800
-F 0 "BT1" V 6700 1850 50  0000 L CNN
-F 1 "Battery_Cell" V 6618 1805 50  0000 L CNN
-F 2 "my_foot_prints:PRT-11892" V 6500 1860 50  0001 C CNN
-F 3 "~" V 6500 1860 50  0001 C CNN
-	1    6500 1800
+P 5250 3400
+F 0 "BT1" V 5450 3450 50  0000 L CNN
+F 1 "Battery_Cell" V 5368 3405 50  0000 L CNN
+F 2 "my_foot_prints:PRT-11892" V 5250 3460 50  0001 C CNN
+F 3 "~" V 5250 3460 50  0001 C CNN
+	1    5250 3400
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR0105
 U 1 1 5BDB3BBB
-P 6600 1800
-F 0 "#PWR0105" H 6600 1550 50  0001 C CNN
-F 1 "GND" H 6605 1627 50  0000 C CNN
-F 2 "" H 6600 1800 50  0001 C CNN
-F 3 "" H 6600 1800 50  0001 C CNN
-	1    6600 1800
-	0    -1   -1   0   
+P 5350 3400
+F 0 "#PWR0105" H 5350 3150 50  0001 C CNN
+F 1 "GND" H 5355 3227 50  0000 C CNN
+F 2 "" H 5350 3400 50  0001 C CNN
+F 3 "" H 5350 3400 50  0001 C CNN
+	1    5350 3400
+	1    0    0    -1  
 $EndComp
 Text GLabel 3700 4500 2    50   Input ~ 0
 SWDIO
@@ -172,7 +172,7 @@ F 3 "" H 5350 1650 50  0001 C CNN
 	1    5350 1650
 	1    0    0    -1  
 $EndComp
-Text GLabel 3200 1700 2    50   Input ~ 0
+Text GLabel 1800 1700 0    50   Input ~ 0
 LED
 Text GLabel 1800 1800 0    50   Input ~ 0
 SWDIO
@@ -198,7 +198,7 @@ U 1 1 5BDB473F
 P 5100 2550
 F 0 "J2" H 5073 2430 50  0000 R CNN
 F 1 "Conn_01x02_Male" H 5073 2521 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5100 2550 50  0001 C CNN
+F 2 "my_foot_prints:2_pad_sufacemount" H 5100 2550 50  0001 C CNN
 F 3 "~" H 5100 2550 50  0001 C CNN
 	1    5100 2550
 	-1   0    0    1   
@@ -215,7 +215,7 @@ F 3 "" H 4900 2550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Minimized-Transmitter-rescue:RFM69HCW-Transmitter~board-rescue U2
+L Minimized-Transmitter-rescue:RFM69HCW-Transmitter_board-rescue U2
 U 1 1 5C15B19A
 P 6900 4500
 F 0 "U2" H 6900 5087 60  0000 C CNN
@@ -250,16 +250,14 @@ $EndComp
 $Comp
 L power:+3V3 #PWR0106
 U 1 1 5BDB3C26
-P 6200 1800
-F 0 "#PWR0106" H 6200 1650 50  0001 C CNN
-F 1 "+3V3" V 6215 1928 50  0000 L CNN
-F 2 "" H 6200 1800 50  0001 C CNN
-F 3 "" H 6200 1800 50  0001 C CNN
-	1    6200 1800
-	-1   0    0    1   
+P 4700 3500
+F 0 "#PWR0106" H 4700 3350 50  0001 C CNN
+F 1 "+3V3" V 4715 3628 50  0000 L CNN
+F 2 "" H 4700 3500 50  0001 C CNN
+F 3 "" H 4700 3500 50  0001 C CNN
+	1    4700 3500
+	0    1    1    0   
 $EndComp
-Wire Wire Line
-	6200 1800 6300 1800
 $Comp
 L Switch:SW_Push SW1
 U 1 1 5C23E259
@@ -339,7 +337,7 @@ Text Notes 4850 2300 0    50   ~ 0
 Serial Out
 Text Notes 4950 1300 0    50   ~ 0
 LED
-Text Notes 6250 1550 0    50   ~ 0
+Text Notes 5000 3150 0    50   ~ 0
 Battery
 Text Notes 6800 3850 0    50   ~ 0
 Radio
@@ -347,4 +345,28 @@ Text Notes 3450 4050 0    50   ~ 0
 SWD Connections
 Text Notes 7550 2900 0    50   ~ 0
 Programable Button\n
+$Comp
+L Connector:Conn_01x03_Male J1
+U 1 1 5C2FB3B8
+P 4500 3500
+F 0 "J1" H 4606 3778 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 4606 3687 50  0000 C CNN
+F 2 "my_foot_prints:SlideSwitch_SMD_PN#COM-10860" H 4500 3500 50  0001 C CNN
+F 3 "~" H 4500 3500 50  0001 C CNN
+	1    4500 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 3400 4700 3400
+$Comp
+L power:GND #PWR0114
+U 1 1 5C2FB7A8
+P 4700 3600
+F 0 "#PWR0114" H 4700 3350 50  0001 C CNN
+F 1 "GND" H 4705 3427 50  0000 C CNN
+F 2 "" H 4700 3600 50  0001 C CNN
+F 3 "" H 4700 3600 50  0001 C CNN
+	1    4700 3600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
