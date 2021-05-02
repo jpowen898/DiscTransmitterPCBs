@@ -1,4 +1,4 @@
-(module RFM96HCW (layer F.Cu) (tedit 5C15535B)
+(module RFM96HCW (layer F.Cu) (tedit 5F7B3E81)
   (fp_text reference U1 (at 0.05 -9.15) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -36,4 +36,9 @@
   (pad 10 smd roundrect (at -7.3 2) (size 2.4 1.524) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.25))
   (pad 8 smd roundrect (at -7.3 6) (size 2.4 1.524) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.25))
   (pad 1 thru_hole circle (at 6.8 6.05) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask))
+  (model /home/parker/Documents/projects/DiscTransmitterPCBs/my_foot_prints.pretty/RFM69W.STEP
+    (at (xyz 0 0 0))
+    (scale (xyz 1 1 0.8))
+    (rotate (xyz -90 0 90))
+  )
 )
